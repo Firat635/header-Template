@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: center;
+    .container{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        .logo{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            span{
+                font-size: 1.5rem;
+                font-weight: 700;
+                letter-spacing: 1.5px;
+            }
+            img{
+                width: 5rem;
+                height: 5rem;
+                border-radius: 50%;
+                object-fit: cover;
+                // ! background-size: cover;
+                // background img verdiyimizde 
+                // sekili cover etmek ucun isdifade olunur 
+            }
+        }
+        nav{
+            ul{
+                display: flex;
+                gap: 25px;
+                .item3{
+                    position: relative;
+                    &:hover{
+                    .item3menu{
+                        display: flex;
+                    }
+                    }
+                    .item3menu{
+                        // display: none;
+                        height: 15rem;
+                        // background-color: red;
+                        position: absolute;
+                        top: 0px;
+                        display: none;
+                        align-items: center;
+                        ul{
+                            display: flex;
+                            width: 10rem;
+                            background-color: black;
+                            flex-direction: column;
+                            li{
+                                a{
+                                    color: #fff;
+                                    padding: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+                li{
+                    a{
+                        color: black;
+                        transition: all .5s;
+                        font-size: 1.5rem;
+                        &:hover{
+                            color: orange;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}

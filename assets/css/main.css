@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+header .container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+header .container .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .container .logo span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+header .container .logo img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+header .container nav ul {
+  display: flex;
+  gap: 25px;
+}
+header .container nav ul .item3 {
+  position: relative;
+}
+header .container nav ul .item3:hover .item3menu {
+  display: flex;
+}
+header .container nav ul .item3 .item3menu {
+  height: 15rem;
+  position: absolute;
+  top: 0px;
+  display: none;
+  align-items: center;
+}
+header .container nav ul .item3 .item3menu ul {
+  display: flex;
+  width: 10rem;
+  background-color: black;
+  flex-direction: column;
+}
+header .container nav ul .item3 .item3menu ul li a {
+  color: #fff;
+  padding: 5px;
+}
+header .container nav ul li a {
+  color: black;
+  transition: all 0.5s;
+  font-size: 1.5rem;
+}
+header .container nav ul li a:hover {
+  color: orange;
+}
